@@ -24,10 +24,10 @@ public class Radio {
     // Setters station
     public void setCurrentStation(int newCurrentStation) {
         if (newCurrentStation > maxStation) {
-            newCurrentStation = minStation;
+            return;
         }
         if (newCurrentStation < minStation) {
-            newCurrentStation = maxStation;
+            return;
         }
         currentStation = newCurrentStation;
     }
